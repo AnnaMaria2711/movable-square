@@ -22,7 +22,7 @@ function Square(){
     }
 function registerMoveListener() {
     document.addEventListener("mousemove",(moveEvent));
-    document.addEventListener("mouseup",() => { document.removeEventListener("mousemove") })
+    document.addEventListener("mouseup",() => { document.removeEventListener("mousemove", moveEvent) })
 
 
 }
